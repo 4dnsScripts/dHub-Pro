@@ -1,0 +1,136 @@
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local label = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local TacoBell = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local TacoBellV2 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local ComingSoon = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local ComingSoon2 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Next = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Back = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Workspace
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+main.Position = UDim2.new(0.173645332, 0, 0.199750304, 0)
+main.Size = UDim2.new(0, 550, 0, 384)
+main.Active = true
+main.Draggable = true
+
+UICorner.CornerRadius = UDim.new(0, 10)
+UICorner.Parent = main
+
+label.Name = "label"
+label.Parent = main
+label.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+label.Position = UDim2.new(0.0236363634, 0, 0.020833334, 0)
+label.Size = UDim2.new(0, 525, 0, 38)
+label.Font = Enum.Font.FredokaOne
+label.Text = "dHub Pro"
+label.TextColor3 = Color3.fromRGB(255, 255, 255)
+label.TextScaled = true
+label.TextSize = 20.000
+label.TextWrapped = true
+
+UICorner_2.Parent = label
+
+TacoBell.Name = "Taco Bell"
+TacoBell.Parent = main
+TacoBell.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+TacoBell.Position = UDim2.new(0.0218182188, 0, 0.153645828, 0)
+TacoBell.Size = UDim2.new(0, 200, 0, 50)
+TacoBell.Font = Enum.Font.Sarpanch
+TacoBell.Text = "Taco Bell"
+TacoBell.TextColor3 = Color3.fromRGB(0, 0, 0)
+TacoBell.TextScaled = true
+TacoBell.TextSize = 14.000
+TacoBell.TextWrapped = true
+TacoBell.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/JamesTheRemaker/TacoBell/main/tacobell"))()
+end)
+
+UICorner_3.Parent = TacoBell
+
+TacoBellV2.Name = "Taco Bell V2"
+TacoBellV2.Parent = main
+TacoBellV2.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+TacoBellV2.Position = UDim2.new(0.612727284, 0, 0.153645828, 0)
+TacoBellV2.Size = UDim2.new(0, 200, 0, 50)
+TacoBellV2.Font = Enum.Font.Sarpanch
+TacoBellV2.Text = "Taco Bell V2"
+TacoBellV2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TacoBellV2.TextScaled = true
+TacoBellV2.TextSize = 14.000
+TacoBellV2.TextWrapped = true
+TacoBell.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/4dnsScripts/TacoBellV2/main/Taco"))()
+end)
+
+UICorner_4.Parent = TacoBellV2
+
+ComingSoon.Name = "Coming Soon"
+ComingSoon.Parent = main
+ComingSoon.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+ComingSoon.Position = UDim2.new(0.612727284, 0, 0.559895813, 0)
+ComingSoon.Size = UDim2.new(0, 200, 0, 50)
+ComingSoon.Font = Enum.Font.Sarpanch
+ComingSoon.Text = "Coming Soon"
+ComingSoon.TextColor3 = Color3.fromRGB(0, 0, 0)
+ComingSoon.TextScaled = true
+ComingSoon.TextSize = 14.000
+ComingSoon.TextWrapped = true
+
+UICorner_5.Parent = ComingSoon
+
+ComingSoon2.Name = "Coming Soon 2"
+ComingSoon2.Parent = main
+ComingSoon2.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+ComingSoon2.Position = UDim2.new(0.0218182206, 0, 0.559895813, 0)
+ComingSoon2.Size = UDim2.new(0, 200, 0, 50)
+ComingSoon2.Font = Enum.Font.Sarpanch
+ComingSoon2.Text = "Coming Soon"
+ComingSoon2.TextColor3 = Color3.fromRGB(0, 0, 0)
+ComingSoon2.TextScaled = true
+ComingSoon2.TextSize = 14.000
+ComingSoon2.TextWrapped = true
+
+UICorner_6.Parent = ComingSoon2
+
+Next.Name = "Next"
+Next.Parent = main
+Next.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+Next.Position = UDim2.new(0.889090836, 0, 0.841145813, 0)
+Next.Size = UDim2.new(0, 48, 0, 50)
+Next.Font = Enum.Font.FredokaOne
+Next.Text = ">"
+Next.TextColor3 = Color3.fromRGB(0, 0, 0)
+Next.TextScaled = true
+Next.TextSize = 14.000
+Next.TextWrapped = true
+
+UICorner_7.Parent = Next
+
+Back.Name = "Back"
+Back.Parent = main
+Back.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+Back.Position = UDim2.new(0.0236362815, 0, 0.841145813, 0)
+Back.Size = UDim2.new(0, 48, 0, 50)
+Back.Font = Enum.Font.FredokaOne
+Back.Text = "<"
+Back.TextColor3 = Color3.fromRGB(0, 0, 0)
+Back.TextScaled = true
+Back.TextSize = 14.000
+Back.TextWrapped = true
+
+UICorner_8.Parent = Back
